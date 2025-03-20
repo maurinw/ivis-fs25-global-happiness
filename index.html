@@ -4,36 +4,39 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Global Happiness</title>
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
-    />
+    <!-- Styles -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link href="style/global.css" rel="stylesheet" />
+    <!-- Scripts -->
     <script src="js/stickymate.js" async defer></script>
+    <script src="js/d3.v7.min.js"></script>
+    <script type="module" src="js/main.js"></script>
   </head>
   <body>
     <div class="dark">
       <!-- Welcome -->
-      <div class="overflow dark" data-sticky="from: top, duration: 100vh">
+      <div class="overflow" data-sticky="from: top, duration: 100vh">
         <div
           class="fullwindow"
           data-animation="opacity: {0: 1, 50vh: 0}, transform: {0: scale(1), 100vh: scale(7.5)}"
         >
-          <div class="header-page">Global <strong>Happiness</strong></div>
+          <div class="header-page">
+            How <strong>Happy</strong> ist the World?
+          </div>
         </div>
       </div>
+
+      <hr />
+
       <!-- Storytelling -->
       <section>
-        <div class="flex-container">
-          <div class="leftwindow" data-sticky="from: -20vh, duration: 0vh">
-            <h1>Storytelling <strong>1</strong></h1>
+        <div class="flex-container" data-animation="opacity: {-100vh: 0, 0: 1}">
+          <div class="leftwindow" data-sticky="from: center, duration: 0vh">
+            <h1>Let's have a <strong>Look</strong></h1>
           </div>
           <div class="rightwindow">
-            <h2>Header 1</h2>
+            <h2>Introduction</h2>
             <p>
               Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
               nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
@@ -46,7 +49,7 @@
               Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum
               dolor sit amet.
             </p>
-            <h2>Header 2</h2>
+            <h2>What defines Happiness?</h2>
             <p>
               Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
               nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
@@ -59,7 +62,7 @@
               Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum
               dolor sit amet.
             </p>
-            <h2>Header 3</h2>
+            <h2>World Happiness Report</h2>
             <p>
               Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
               nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
@@ -76,89 +79,99 @@
         </div>
       </section>
 
+      <hr />
+
       <section>
-        <div class="flex-container">
-          <div class="leftwindow" data-sticky="from: -20vh, duration: 0vh">
-            <h1>Storytelling <strong>2</strong></h1>
+        <div
+          class="flex-container"
+          data-animation="opacity: {-80vh: 0, 20vh: 1}"
+        >
+          <div class="leftwindowmap">
+            <div
+              class="mapsection"
+              data-sticky="from: -50vh, duration: 100vh"
+              data-animation="opacity: {0:0}"
+            ></div>
+            <div
+              class="mapsection"
+              data-sticky="from: -50vh, duration: 50vh"
+              data-animation="opacity: {-200vh:0, -100vh: 1, 10vh: 0}"
+            >
+              <h2>Storysection 1</h2>
+              <p>
+                Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
+                diam nonumy eirmod tempor invidunt ut labore et dolore magna
+                aliquyam erat, sed diam voluptua. At vero eos et accusam et
+                justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea
+                takimat
+              </p>
+            </div>
+
+            <div
+              class="mapsection"
+              data-sticky="from: -50vh, duration: 100vh"
+              data-animation="opacity: {-200vh:0, -100vh: 1, 10vh: 0}"
+            >
+              <h2>Storysection 2</h2>
+              <p>
+                Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
+                diam nonumy eirmod tempor invidunt ut labore et dolore magna
+                aliquyam erat, sed diam voluptua. At vero eos et accusam et
+                justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea
+                takimat
+              </p>
+            </div>
+
+            <div
+              class="mapsection"
+              data-sticky="from: -50vh, duration: 100vh"
+              data-animation="opacity: {-200vh:0, -100vh: 1, 10vh: 0}"
+            >
+              <h2>Storysection 3</h2>
+              <p>
+                Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
+                diam nonumy eirmod tempor invidunt ut labore et dolore magna
+                aliquyam erat, sed diam voluptua. At vero eos et accusam et
+                justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea
+                takimat
+              </p>
+            </div>
+
+            <div
+              class="mapsection"
+              data-sticky="from: -50vh, duration: 100vh"
+              data-animation="opacity: {-200vh:0, -100vh: 1, 10vh: 0}"
+            >
+              <h2>Storysection 4</h2>
+              <p>
+                Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
+                diam nonumy eirmod tempor invidunt ut labore et dolore magna
+                aliquyam erat, sed diam voluptua. At vero eos et accusam et
+                justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea
+                takimat
+              </p>
+            </div>
           </div>
-          <div class="rightwindow">
-            <h2>Header 1</h2>
-            <p>
-              Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
-              nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
-              erat, sed diam voluptua. At vero eos et accusam et justo duo
-              dolores et ea rebum. Stet clita kasd gubergren, no sea takimata
-              sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit
-              amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor
-              invidunt ut labore et dolore magna aliquyam erat, sed diam
-              voluptua. At vero eos et accusam et justo duo dolores et ea rebum.
-              Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum
-              dolor sit amet.
-            </p>
-            <h2>Header 2</h2>
-            <p>
-              Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
-              nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
-              erat, sed diam voluptua. At vero eos et accusam et justo duo
-              dolores et ea rebum. Stet clita kasd gubergren, no sea takimata
-              sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit
-              amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor
-              invidunt ut labore et dolore magna aliquyam erat, sed diam
-              voluptua. At vero eos et accusam et justo duo dolores et ea rebum.
-              Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum
-              dolor sit amet.
-            </p>
-            <h2>Header 3</h2>
-            <p>
-              Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
-              nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
-              erat, sed diam voluptua. At vero eos et accusam et justo duo
-              dolores et ea rebum. Stet clita kasd gubergren, no sea takimata
-              sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit
-              amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor
-              invidunt ut labore et dolore magna aliquyam erat, sed diam
-              voluptua. At vero eos et accusam et justo duo dolores et ea rebum.
-              Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum
-              dolor sit amet.
-            </p>
+
+          <div class="rightwindowmap" data-sticky="from: top, duration: 0vh">
+            <div id="map-container">
+              <svg id="world-map"></svg>
+            </div>
           </div>
-          
         </div>
       </section>
 
+      <hr />
+
+      <!-- Storytelling -->
+
       <section>
         <div class="flex-container">
-          <div class="leftwindow" data-sticky="from: -20vh, duration: 0vh">
-            <h1>Storytelling <strong>3</strong></h1>
+          <div class="leftwindow" data-sticky="from: -5vh, duration: 0vh">
+            <h1><strong>Thank</strong> you for visiting!</h1>
           </div>
           <div class="rightwindow">
-            <h2>Header 1</h2>
-            <p>
-              Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
-              nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
-              erat, sed diam voluptua. At vero eos et accusam et justo duo
-              dolores et ea rebum. Stet clita kasd gubergren, no sea takimata
-              sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit
-              amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor
-              invidunt ut labore et dolore magna aliquyam erat, sed diam
-              voluptua. At vero eos et accusam et justo duo dolores et ea rebum.
-              Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum
-              dolor sit amet.
-            </p>
-            <h2>Header 2</h2>
-            <p>
-              Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
-              nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
-              erat, sed diam voluptua. At vero eos et accusam et justo duo
-              dolores et ea rebum. Stet clita kasd gubergren, no sea takimata
-              sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit
-              amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor
-              invidunt ut labore et dolore magna aliquyam erat, sed diam
-              voluptua. At vero eos et accusam et justo duo dolores et ea rebum.
-              Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum
-              dolor sit amet.
-            </p>
-            <h2>Header 3</h2>
+            <h2>Disclaimer</h2>
             <p>
               Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
               nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
@@ -172,13 +185,7 @@
               dolor sit amet.
             </p>
           </div>
-          
         </div>
-      </section>
-
-      <!-- Visualization -->
-      <section>
-        <div class="fullwindow"></div>
       </section>
     </div>
   </body>
