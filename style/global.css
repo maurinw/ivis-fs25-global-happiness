@@ -77,7 +77,7 @@ body {
   height: 100vh;
 }
 
-strong, h2 {
+strong, h2, h3 {
   color: #d9b99b;
 }
 .overflow {
