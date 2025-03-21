@@ -4,18 +4,28 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Global Happiness</title>
-    <!-- Styles -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"/>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+    />
+    <!-- Font Awesome CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <!-- Custom CSS -->
     <link href="style/global.css" rel="stylesheet" />
-    <!-- Scripts -->
+    <!-- Stickymate, D3, and Main JS -->
     <script src="js/stickymate.js" async defer></script>
     <script src="js/d3.v7.min.js"></script>
     <script type="module" src="js/main.js"></script>
+    <!-- Bootstrap Bundle JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
   </head>
   <body>
     <div class="dark">
-      <!-- Welcome -->
+      <!-- Welcome Section -->
       <div class="overflow" data-sticky="from: top, duration: 100vh">
         <div
           class="fullwindow"
@@ -26,133 +36,141 @@
           </div>
         </div>
       </div>
-
       <hr />
 
-      <!-- Storytelling -->
+      <!-- Introduction Section -->
       <section>
-        <div class="flex-container" data-animation="opacity: {-100vh: 0, 0: 1}">
+        <div class="flex-container" data-animation="opacity: {-100vh: 0, -50vh:1}">
           <div class="leftwindow" data-sticky="from: center, duration: 0vh">
             <h1>Let's have a <strong>Look</strong></h1>
           </div>
           <div class="rightwindow">
             <h2>Introduction</h2>
             <p>
-              Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
-              nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
-              erat, sed diam voluptua. At vero eos et accusam et justo duo
-              dolores et ea rebum. Stet clita kasd gubergren, no sea takimata
-              sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit
-              amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor
-              invidunt ut labore et dolore magna aliquyam erat, sed diam
-              voluptua. At vero eos et accusam et justo duo dolores et ea rebum.
-              Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum
-              dolor sit amet.
+              Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.
             </p>
             <h3>Definition of Happiness</h3>
             <p>
-              Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
-              nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
-              erat, sed diam voluptua. At vero eos et accusam et justo duo
-              dolores et ea rebum. Stet clita kasd gubergren, no sea takimata
-              sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit
-              amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor
-              invidunt ut labore et dolore magna aliquyam erat, sed diam
-              voluptua. At vero eos et accusam et justo duo dolores et ea rebum.
-              Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum
-              dolor sit amet.
+              Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor.
             </p>
             <h3>World Happiness Report</h3>
             <p>
-              Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
-              nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
-              erat, sed diam voluptua. At vero eos et accusam et justo duo
-              dolores et ea rebum. Stet clita kasd gubergren, no sea takimata
-              sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit
-              amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor
-              invidunt ut labore et dolore magna aliquyam erat, sed diam
-              voluptua. At vero eos et accusam et justo duo dolores et ea rebum.
-              Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum
-              dolor sit amet.
+              Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor.
             </p>
           </div>
         </div>
       </section>
-
       <hr />
 
+      <!-- Explanation Section with Interactive Elements -->
       <section>
-        <div
-          class="flex-container"
-          data-animation="opacity: {-80vh: 0, 20vh: 1}"
-        >
+        <div class="flex-container" data-animation="opacity: {-80vh: 0, 20vh: 1}">
           <div class="leftwindowmap">
+            <!-- Explanation: Colors -->
             <div
-              class="mapsection"
-              data-sticky="from: -50vh, duration: 100vh"
-              data-animation="opacity: {0:0}"
-            ></div>
-            <div
-              class="mapsection"
-              data-sticky="from: -50vh, duration: 50vh"
-              data-animation="opacity: {-200vh:0, -100vh: 1, 10vh: 0}"
+              class="explanationsection"
+              data-sticky="from: top, duration: 0vh"
+              data-animation="opacity: {50vh: 1, 100vh: 0}"
             >
-              <h2>Storysection 1</h2>
-              <p>
-                Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
-                diam nonumy eirmod tempor invidunt ut labore et dolore magna
-                aliquyam erat, sed diam voluptua. At vero eos et accusam et
-                justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea
-                takimat
-              </p>
+              <div>
+                <h2>Explanation: Colors</h2>
+                <p>bla ...</p>
+                <hr />
+              </div>
             </div>
-
+            <!-- Explanation: Year Slider -->
             <div
-              class="mapsection"
-              data-sticky="from: -50vh, duration: 100vh"
-              data-animation="opacity: {-200vh:0, -100vh: 1, 10vh: 0}"
+              class="explanationsection"
+              data-sticky="from: top, duration: 0vh"
+              data-animation="opacity: {50vh: 1, 100vh: 0}"
             >
-              <h2>Storysection 2</h2>
-              <p>
-                Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
-                diam nonumy eirmod tempor invidunt ut labore et dolore magna
-                aliquyam erat, sed diam voluptua. At vero eos et accusam et
-                justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea
-                takimat
-              </p>
+              <div>
+                <h2>Explanation: Year</h2>
+                <p>Select a year to update the map.</p>
+                <hr />
+                <div class="range-container">
+                  <label class="toolbar-label" for="explanationYearSlider">Year</label>
+                  <input
+                    type="range"
+                    class="form-range year-slider"
+                    id="explanationYearSlider"
+                    min="2015"
+                    max="2024"
+                    step="1"
+                    value="2015"
+                  />
+                  <div class="range-values">
+                    <span id="explanationYearValue">2015</span>
+                  </div>
+                </div>
+              </div>
             </div>
-
+            <!-- Explanation: Metric Toggles -->
             <div
-              class="mapsection"
-              data-sticky="from: -50vh, duration: 100vh"
-              data-animation="opacity: {-200vh:0, -100vh: 1, 10vh: 0}"
+              class="explanationsection"
+              data-sticky="from: top, duration: 0vh"
+              data-animation="opacity: {50vh: 1, 100vh: 0}"
             >
-              <h2>Storysection 3</h2>
-              <p>
-                Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
-                diam nonumy eirmod tempor invidunt ut labore et dolore magna
-                aliquyam erat, sed diam voluptua. At vero eos et accusam et
-                justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea
-                takimat
-              </p>
+              <div>
+                <h2>Explanation: Metrics</h2>
+                <p>Toggle metrics to update the map.</p>
+                <hr />
+                <div class="toggle-group">
+                  <!-- All 7 toggles appear in the explanation -->
+                  <div class="form-check form-switch">
+                    <input class="form-check-input metric-toggle" type="checkbox" id="explanationMetricGDP" data-metric="gdp" checked />
+                    <label class="form-check-label" for="explanationMetricGDP">GDP</label>
+                  </div>
+                  <div class="form-check form-switch">
+                    <input class="form-check-input metric-toggle" type="checkbox" id="explanationMetricSocial" data-metric="social" checked />
+                    <label class="form-check-label" for="explanationMetricSocial">Social Support</label>
+                  </div>
+                  <div class="form-check form-switch">
+                    <input class="form-check-input metric-toggle" type="checkbox" id="explanationMetricHealth" data-metric="health" checked />
+                    <label class="form-check-label" for="explanationMetricHealth">Healthy Life Expectancy</label>
+                  </div>
+                  <div class="form-check form-switch">
+                    <input class="form-check-input metric-toggle" type="checkbox" id="explanationMetricFreedom" data-metric="freedom" checked />
+                    <label class="form-check-label" for="explanationMetricFreedom">Freedom to Make Life Choices</label>
+                  </div>
+                  <div class="form-check form-switch">
+                    <input class="form-check-input metric-toggle" type="checkbox" id="explanationMetricGenerosity" data-metric="generosity" checked />
+                    <label class="form-check-label" for="explanationMetricGenerosity">Generosity</label>
+                  </div>
+                  <div class="form-check form-switch">
+                    <input class="form-check-input metric-toggle" type="checkbox" id="explanationMetricCorruption" data-metric="corruption" checked />
+                    <label class="form-check-label" for="explanationMetricCorruption">Perceptions of Corruption</label>
+                  </div>
+                  <div class="form-check form-switch">
+                    <input class="form-check-input metric-toggle" type="checkbox" id="explanationMetricDystopia" data-metric="dystopia" checked />
+                    <label class="form-check-label" for="explanationMetricDystopia">Dystopia Residual</label>
+                  </div>
+                </div>
+              </div>
             </div>
-
+            <!-- Explanation: Trends -->
             <div
-              class="mapsection"
-              data-sticky="from: -50vh, duration: 100vh"
-              data-animation="opacity: {-200vh:0, -100vh: 1, 10vh: 0}"
+              class="explanationsection"
+              data-sticky="from: top, duration: 0vh"
+              data-animation="opacity: {50vh: 1, 100vh: 0}"
             >
-              <h2>Storysection 4</h2>
-              <p>
-                Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
-                diam nonumy eirmod tempor invidunt ut labore et dolore magna
-                aliquyam erat, sed diam voluptua. At vero eos et accusam et
-                justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea
-                takimat
-              </p>
+              <div>
+                <h2>Explanation: Trends</h2>
+                <p>bla ...</p>
+                <hr />
+              </div>
+            </div>
+            <!-- Story -->
+            <div class="storysection" data-sticky="from: top, duration: 0vh">
+              <div>
+                <h2>Story</h2>
+                <p>bla ...</p>
+                <hr />
+              </div>
             </div>
           </div>
 
+          <!-- Map Section -->
           <div class="rightwindowmap" data-sticky="from: top, duration: 0vh">
             <div id="map-container">
               <svg id="world-map"></svg>
@@ -160,33 +178,122 @@
           </div>
         </div>
       </section>
-
       <hr />
 
-      <!-- Storytelling -->
-
+      <!-- Toolbar Section -->
       <section>
-        <div class="flex-container">
-          <div class="leftwindow" data-sticky="from: -5vh, duration: 0vh">
-            <h1><strong>Thank</strong> you for visiting!</h1>
+        <div class="toolbar">
+          <!-- Toolbar: Year Slider -->
+          <div class="toolbar-item slider-item">
+            <label for="toolbarYearSlider" class="toolbar-label">Year</label>
+            <div class="range-container">
+              <input
+                type="range"
+                id="toolbarYearSlider"
+                class="form-range year-slider"
+                min="2015"
+                max="2024"
+                step="1"
+                value="2015"
+              />
+              <div class="range-values">
+                <span id="toolbarYearValue">2015</span>
+              </div>
+            </div>
           </div>
-          <div class="rightwindow">
-            <h2>Disclaimer</h2>
-            <p>
-              Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
-              nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
-              erat, sed diam voluptua. At vero eos et accusam et justo duo
-              dolores et ea rebum. Stet clita kasd gubergren, no sea takimata
-              sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit
-              amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor
-              invidunt ut labore et dolore magna aliquyam erat, sed diam
-              voluptua. At vero eos et accusam et justo duo dolores et ea rebum.
-              Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum
-              dolor sit amet.
-            </p>
+          <!-- Toolbar: Metric Toggles (6 toggles in 2 columns) -->
+          <div class="toolbar-item toggles-item">
+            <label class="toolbar-label">Metrics</label>
+            <div class="toggle-group">
+              <!-- Only 6 toggles appear in the toolbar -->
+              <div class="form-check form-switch">
+                <label class="form-check-label" for="toolbarMetricGDP">GDP</label>
+                <input class="form-check-input metric-toggle" type="checkbox" id="toolbarMetricGDP" data-metric="gdp" checked />
+                
+              </div>
+              <div class="form-check form-switch">
+                <label class="form-check-label" for="toolbarMetricSocial">Social Support</label>
+                <input class="form-check-input metric-toggle" type="checkbox" id="toolbarMetricSocial" data-metric="social" checked />
+                
+              </div>
+              <div class="form-check form-switch">
+                <label class="form-check-label" for="toolbarMetricHealth">Healthy Life Expectancy</label>
+                <input class="form-check-input metric-toggle" type="checkbox" id="toolbarMetricHealth" data-metric="health" checked />
+                
+              </div>
+              <div class="form-check form-switch">
+                <label class="form-check-label" for="toolbarMetricFreedom">Freedom</label>
+                <input class="form-check-input metric-toggle" type="checkbox" id="toolbarMetricFreedom" data-metric="freedom" checked />
+                
+              </div>
+              <div class="form-check form-switch">
+                <label class="form-check-label" for="toolbarMetricGenerosity">Generosity</label>
+                <input class="form-check-input metric-toggle" type="checkbox" id="toolbarMetricGenerosity" data-metric="generosity" checked />
+                
+              </div>
+              <div class="form-check form-switch">
+                <label class="form-check-label" for="toolbarMetricCorruption">Corruption</label>
+                <input class="form-check-input metric-toggle" type="checkbox" id="toolbarMetricCorruption" data-metric="corruption" checked />
+                
+              </div>
+            </div>
+          </div>
+          <!-- Toolbar: Trends Button -->
+          <div class="toolbar-item trends-item">
+            <label class="toolbar-label">Trends</label>
+            <button class="btn btn-primary">Trends</button>
           </div>
         </div>
       </section>
+
     </div>
+
+    <!-- Synchronization Script -->
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        // Sync single year slider (both explanation and toolbar)
+        const yearSliders = document.querySelectorAll(".year-slider");
+        const explanationYearValue = document.getElementById("explanationYearValue");
+        const toolbarYearValue = document.getElementById("toolbarYearValue");
+
+        function syncYearSlider(changedSlider) {
+          const newValue = changedSlider.value;
+          yearSliders.forEach((slider) => {
+            slider.value = newValue;
+          });
+          explanationYearValue.textContent = newValue;
+          toolbarYearValue.textContent = newValue;
+        }
+
+        yearSliders.forEach((slider) => {
+          slider.addEventListener("input", function () {
+            syncYearSlider(slider);
+          });
+        });
+
+        // Sync Metric Toggles (grouped by data-metric)
+        const metricToggles = document.querySelectorAll(".metric-toggle");
+        const toggleGroups = {};
+        metricToggles.forEach((toggle) => {
+          const metric = toggle.getAttribute("data-metric");
+          if (!toggleGroups[metric]) {
+            toggleGroups[metric] = [];
+          }
+          toggleGroups[metric].push(toggle);
+        });
+
+        Object.keys(toggleGroups).forEach((metric) => {
+          toggleGroups[metric].forEach((toggle) => {
+            toggle.addEventListener("change", function () {
+              toggleGroups[metric].forEach((t) => {
+                if (t !== toggle) {
+                  t.checked = toggle.checked;
+                }
+              });
+            });
+          });
+        });
+      });
+    </script>
   </body>
 </html>
